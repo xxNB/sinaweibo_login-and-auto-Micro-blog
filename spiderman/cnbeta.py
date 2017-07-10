@@ -1,7 +1,7 @@
 import bs4
 
-from spider.spider import Spider
-from weibo.weibo_message import WeiboMessage
+from spiderman.spider import Spider
+from weibo_process.weibo_message import WeiboMessage
 
 HOME_URL = "http://www.cnbeta.com"
 
@@ -16,7 +16,6 @@ class CnbetaParser(Spider):
             msg = ''
             if len( items ) > 0:
                   topItem = items[0]
-                  print(topItem)
                   title = topItem.h3.text.strip()
                   path = topItem.a.get( 'href' )
                   url = HOME_URL + path

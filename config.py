@@ -8,8 +8,8 @@ user_agent = (
 )
 
 # 微博账号和密码
-USER_NAME = "15000406743"
-PASSWD = "zx19950101"
+USER_NAME = "*"
+PASSWD = "*"
 
 # 发送微博的时间间隔
 TIME_SLOG =  10

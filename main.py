@@ -2,8 +2,7 @@
 
 import send_task
 from config import USER_NAME, PASSWD
-from weibo.new_login import login
-from weibo import weibo_login
+from weibo_process.new_login import login
 
 if __name__ == '__main__':
     http, uid = login(username=USER_NAME, password=PASSWD)

@@ -3,7 +3,7 @@ from threading import Thread, Event
 import spider_factory
 
 from config import TIME_SLOG
-from weibo.weibo_sender import WeiboSender
+from weibo_process.weibo_sender import WeiboSender
 from logger import logger
 
 class SendTask(Thread):

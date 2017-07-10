@@ -1,6 +1,6 @@
 import time
 
-from weibo.weibo_message import WeiboMessage
+from weibo_process.weibo_message import WeiboMessage
 from config import add_watermark, watermark_url, watermark_nike
 from config import max_images
 from logger import logger

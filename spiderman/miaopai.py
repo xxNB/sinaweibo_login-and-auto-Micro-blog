@@ -1,8 +1,8 @@
 import json
 import random
 
-from spider.spider import Spider
-from weibo.weibo_message import WeiboMessage
+from spiderman.spider import Spider
+from weibo_process.weibo_message import WeiboMessage
 
 HOME_URL = "http://www.miaopai.com/miaopai/index_api?cateid=2002&per=20&page=1"
 
@@ -23,7 +23,7 @@ class MiaopaParser(Spider):
 
       def getItems(self, jsonStr):
             items = []
-            nodes = json.loads(jsonStr, "utf-8")
+            nodes = json.loads(jsonStr)
             results = nodes["result"]
             for node in results:
                   scid = node["channel"]["scid"]

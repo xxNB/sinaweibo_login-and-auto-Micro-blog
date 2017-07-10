@@ -1,9 +1,9 @@
-from spider.cnbeta import CnbetaParser
-from spider.cnblog import CnblogParser
-from spider.miaopai import MiaopaParser
-from spider.myBlog import MyBlogParser
-from spider.techweb import TechwebParser
-from spider.tuicool import TuicoolParser
+from spiderman.cnbeta import CnbetaParser
+from spiderman.cnblog import CnblogParser
+from spiderman.miaopai import MiaopaParser
+from spiderman.myBlog import MyBlogParser
+from spiderman.techweb import TechwebParser
+from spiderman.tuicool import TuicoolParser
 
 spiders = [ 
           MyBlogParser(),

@@ -2,8 +2,8 @@ import bs4
 import random
 
 import zHTTP
-from spider.spider import Spider
-from weibo.weibo_message import WeiboMessage
+from spiderman.spider import Spider
+from weibo_process.weibo_message import WeiboMessage
 
 HOME_URL = "http://blog.5long.me/archives"
 

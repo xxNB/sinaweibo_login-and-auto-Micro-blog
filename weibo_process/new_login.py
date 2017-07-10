@@ -154,7 +154,6 @@ def login(username, password):
     uuid = login_index.text
     uuid_pa = r'"uniqueid":"(.*?)"'
     uuid_res = re.findall(uuid_pa, uuid, re.S)[0]
-    print(uuid_res)
     web_weibo_url = "http://weibo.com/%s/profile?topnav=1&wvr=6&is_all=1" % uuid_res
     weibo_page = session.get(web_weibo_url, headers=headers)
     weibo_pa = r'<title>(.*?)</title>'
